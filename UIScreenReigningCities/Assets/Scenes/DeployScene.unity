@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HomeButton
       objectReference: {fileID: 0}
+    - target: {fileID: 3266137000742198904, guid: 38c1f44bfa9ea56438a0cbd92830fc11, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3266137000742198906, guid: 38c1f44bfa9ea56438a0cbd92830fc11, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -652,13 +656,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 552929270}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1420532719}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &597163767
 GameObject:
   m_ObjectHideFlags: 0
@@ -761,8 +765,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1031325822}
   - component: {fileID: 1031325823}
+  - component: {fileID: 1031325824}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: ARScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -794,8 +799,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ed9a410d801a1d4687bde8ddb3b4259, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  assetPrefab: {fileID: 1092061500928863459, guid: 63c73a2dbd444274a8da16e2059dd588, type: 3}
+  assetPrefab: {fileID: 4740892793402543079, guid: 62c8812b8f32d43459e9c2d1047412f1, type: 3}
   playGround: {fileID: 6122708389098507121, guid: aff1968d46d5fb948b2b18978331ce94, type: 3}
+  markerPrefab: {fileID: 6170400826535544296, guid: 9743391ddf510884fbbd6bbf26d4584d, type: 3}
+--- !u!114 &1031325824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031325821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 158a0a3052b384f4dab4d3ccf858927f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pleaseWait: {fileID: 680631166866227757, guid: 7729eb7bc62ecec448fd70e294c31cc3, type: 3}
 --- !u!1 &1367622774
 GameObject:
   m_ObjectHideFlags: 0
@@ -830,7 +849,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728ad7fae8e460a4ba41265c7308d757, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AnchorPrefab: {fileID: 8938481901251082730, guid: 11cf4501635e1eb47a3dd08b9dde13f3, type: 3}
+  m_AnchorPrefab: {fileID: 0}
 --- !u!114 &1367622776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -856,7 +875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_PlanePrefab: {fileID: 4332011460337871413, guid: b3cce3d5b96b5394090d4788505effa8, type: 3}
-  m_DetectionMode: -1
+  m_DetectionMode: 1
 --- !u!114 &1367622778
 MonoBehaviour:
   m_ObjectHideFlags: 0
