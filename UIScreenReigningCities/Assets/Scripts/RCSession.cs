@@ -13,7 +13,7 @@ public class RCSession : MonoBehaviour
     private void Start()
     {
         DontDestroyOnLoad(this.gameObject);
-        //playerSignin();
+        playerSignin();
         RCStoreConfig = RCApiEndpoint.Instance.fetchGameStoreConfig();
         setupStore();
         //get player resource inside update
@@ -22,13 +22,13 @@ public class RCSession : MonoBehaviour
     private void Update()
     {
         //wait untill we get callback from platform .... must add some timing stuff and abort
-        //if (playerEmail != null && playerResourceConfig == null)
-        //{
+        if (playerEmail != null && playerResourceConfig == null)
+        {
             Debug.Log("Email : " + playerEmail);
             playerResourceConfig = RCApiEndpoint.Instance.fetchPlayerResourceConfig("rppdighe4892@gmail.com");
             setupPlayerResources();
             //RCApiEndpoint.Instance.updatePlayerEntities();
-        //}
+        }
     }
 
     public void playerSignin()

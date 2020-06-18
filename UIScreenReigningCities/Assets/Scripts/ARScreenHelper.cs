@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Transactions;
 using UnityEngine;
 
 public class ARScreenHelper
@@ -15,6 +16,7 @@ public class ARScreenHelper
 
     public PlayerResource duplicateResource;
     public bool canModify;
+    public string currentSupportEntity;
 
     public void reset()
     {

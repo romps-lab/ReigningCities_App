@@ -61,6 +61,76 @@ public class RCStore
         return itemNames;
     }
 
+    public List<string> getSupportCategories()
+    {
+        List<string> keys = new List<string>();
+        foreach (KeyValuePair<string, List<Store.Item>> entries in rcStore.supportingEntities)
+        {
+            keys.Add(entries.Key);
+        }
+        return keys;
+    }
+
+    public List<string> getSupportItemsName(string category)
+    {
+        List<Store.Item> items = new List<Store.Item>();
+        rcStore.supportingEntities.TryGetValue(category, out items);
+
+        List<string> itemNames = new List<string>();
+        foreach (Store.Item item in items)
+        {
+            itemNames.Add(item.name);
+        }
+
+        return itemNames;
+    }
+
+    public List<string> getSupportItemsDisplayName(string category)
+    {
+        List<Store.Item> items = new List<Store.Item>();
+        rcStore.supportingEntities.TryGetValue(category, out items);
+
+        List<string> itemNames = new List<string>();
+        foreach (Store.Item item in items)
+        {
+            itemNames.Add(item.displayName);
+        }
+
+        return itemNames;
+    }
+
+    public List<string> getSupportEntitiesItems()
+    {
+        List<string> result = new List<string>();
+        List<string> categories = getSupportCategories();
+        foreach(string category in categories)
+        {
+            List<string> items = getSupportItemsName(category);
+            foreach(string item in items)
+            {
+                result.Add(item);
+            }
+        }
+
+        return result;
+    }
+
+    public List<string> getSupportEntitiesItemsDisplayName()
+    {
+        List<string> result = new List<string>();
+        List<string> categories = getSupportCategories();
+        foreach (string category in categories)
+        {
+            List<string> items = getSupportItemsDisplayName(category);
+            foreach (string item in items)
+            {
+                result.Add(item);
+            }
+        }
+
+        return result;
+    }
+
 
     private class Store
     {

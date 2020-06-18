@@ -227,6 +227,7 @@ public class ObjectSpawner : MonoBehaviour
                      * affects the transform of new asset and not works as expected.
                      * Its better to use anchor as a parent.
                      */
+                    assetPrefab = Resources.Load<GameObject>(ARScreenHelper.Instance.currentSupportEntity);
                     GameObject obj = Instantiate(assetPrefab, anchor.transform , false);
                     obj.transform.position = adjustedLocation;
 

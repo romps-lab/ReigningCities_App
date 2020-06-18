@@ -43,19 +43,23 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 77603e423fdc4af4aaf43906ff712ddb, type: 3}
-    totalSpriteSurfaceArea: 1022971
+    totalSpriteSurfaceArea: 1031163
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: d5d87563cc3f59c48b6d0c8cc2fc9b11, type: 3}
   - {fileID: 21300000, guid: 59b5df9428db53f448ea9018d4ea56c5, type: 3}
+  - {fileID: 21300000, guid: e7ce36252be6f20428fc8d1f000ad11b, type: 3}
   - {fileID: 21300000, guid: d4f83a752812596478931adf9c5f5f8c, type: 3}
   - {fileID: 21300000, guid: 7e0e7f8af36d10742a470c04d367b35f, type: 3}
   - {fileID: 21300000, guid: e155155c1b5c1a84fa13b7f3a88cd911, type: 3}
   - {fileID: 21300000, guid: e802341f131ce8540854b2c2041ec935, type: 3}
   m_PackedSpriteNamesToIndex:
+  - build
   - tower_defence
+  - red-WhiteText
   - storage_building-1 1
   - Old building
   - Building
