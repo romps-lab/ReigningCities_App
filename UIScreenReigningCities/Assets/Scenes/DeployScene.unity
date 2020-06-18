@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HomeButton
       objectReference: {fileID: 0}
+    - target: {fileID: 3266137000742198901, guid: 38c1f44bfa9ea56438a0cbd92830fc11, type: 3}
+      propertyPath: m_TagString
+      value: UIElement
+      objectReference: {fileID: 0}
     - target: {fileID: 3266137000742198904, guid: 38c1f44bfa9ea56438a0cbd92830fc11, type: 3}
       propertyPath: m_RaycastTarget
       value: 1
@@ -283,6 +287,10 @@ PrefabInstance:
     - target: {fileID: 4187775954749608419, guid: fa586010f0568d94b9def021258ae0e2, type: 3}
       propertyPath: m_Name
       value: BackgroundMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 4187775954749608419, guid: fa586010f0568d94b9def021258ae0e2, type: 3}
+      propertyPath: m_TagString
+      value: UIElement
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa586010f0568d94b9def021258ae0e2, type: 3}
@@ -1072,6 +1080,10 @@ PrefabInstance:
     - target: {fileID: 4651919381051487909, guid: 182d1a5d3ec04464187d92e73d7f1445, type: 3}
       propertyPath: m_Name
       value: VolumeButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 4651919381051487909, guid: 182d1a5d3ec04464187d92e73d7f1445, type: 3}
+      propertyPath: m_TagString
+      value: UIElement
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 182d1a5d3ec04464187d92e73d7f1445, type: 3}

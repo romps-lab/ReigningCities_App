@@ -14,7 +14,7 @@ public class RCApiEndpoint
     {
     }
 
-    private string API_ENDPOINT = "http://192.168.1.207:3000/";
+    private string API_ENDPOINT = "http://10.12.161.202:3000/";
     private string STORE_ENDPOINT = "gameConfig";
     private string PING_ENDPOINT = "ping";
     private string UPDATE_PLAYER_ENTITIES = "updateEntities";

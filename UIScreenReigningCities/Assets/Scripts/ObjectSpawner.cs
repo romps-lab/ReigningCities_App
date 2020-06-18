@@ -98,6 +98,11 @@ public class ObjectSpawner : MonoBehaviour
 
     private void Update()
     {
+        if (EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
+        {
+            return;
+        }
+
         if (!playGroundTapDone)
         {
             placePlayGroundFirst();
@@ -183,10 +188,6 @@ public class ObjectSpawner : MonoBehaviour
 
     private void placeGameObjectOnPlayGround()
     {
-        if (EventSystem.current.IsPointerOverGameObject(-1))
-        {
-            return;
-        }
 
         Debug.Log("Place GameObject First");
         if(Input.touches.Count() > 0 )
@@ -379,7 +380,7 @@ public class ObjectSpawner : MonoBehaviour
         {
             foreach(RaycastHit hit in hits)
             {
-                if(hit.transform == instantiatedPlayGround.transform)
+                if (hit.transform == instantiatedPlayGround.transform)
                 {
                     hitResult = hit;
                     result = true;
