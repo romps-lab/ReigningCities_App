@@ -1,3 +1,3 @@
 # ReigningCities_App
 
-This contains the code for the app as demonstrated by Raj.
+This contains the code for Reigning Cities mobile app.
